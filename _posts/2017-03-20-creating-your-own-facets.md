@@ -333,6 +333,6 @@ public class CustomGetSalesCampaignChildrenQuery : GetSalesCampaignChildrenQuery
 }
 ```
 
-And thats it :) All that is needed then is to test it out
+And thats it :)
 
-I have made an example with the quicksilver repository which can be found [here](https://github.com/Sebbe/Quicksilver/tree/CustomMarketingFacets). In there I have allso made so you could filter Campaigns by Campaigns, so have a look if that looks interesting :)
+I have made an example with the quicksilver repository which can be found [here](https://github.com/Sebbe/Quicksilver/tree/CustomMarketingFacets). I have also added one more Facet group so the editors can filter on campaign name
