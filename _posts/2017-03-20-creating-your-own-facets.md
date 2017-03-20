@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Creating your own marketing facets based on promotion status
+category: episerver
+tags: [episerver, promotions]
 ---
 
-With episerver commerce 10.4.0 they released a new function for marketing where you could filter campaigns by status or promotions by discount type/market. 
+With the release of Episerver Commerce 10.4.0 a new feature where added so you can filter campaigns by status, but I wanted to filter the promotions by status. In this blogpost I will show you how to deactivte the default filters and how you can make your own.
 
-![Image of builting facets]({{ site.baseurl }}/images/2017-03-20/builtin-marketing-facets.png)
+The result should look like this: ![promotion status facets]({{ site.baseUrl }}/images/2017-03-20/promotion-status-facets.png)
 
 The [documentation](http://world.episerver.com/documentation/developer-guides/commerce/marketing/custom-facets-in-the-marketing-overview/) for creating your own facets came last week and I started creating my own facets so they who make promotions at my company could filter promotions by status.
 
@@ -332,8 +334,6 @@ public class CustomGetSalesCampaignChildrenQuery : GetSalesCampaignChildrenQuery
 }
 ```
 
-If you followed this guide then you should now be able to build the solution and get promotions based on status.
-
-![promotion status facets]({{ site.baseUrl }}/images/2017-03-20/promotion-status-facets.png)
+And thats it :) All that is needed then is to test it out
 
 I have made an example with the quicksilver repository which can be found [here](https://github.com/Sebbe/Quicksilver/tree/CustomMarketingFacets). In there I have allso made so you could filter Campaigns by Campaigns, so have a look if that looks interesting :)
