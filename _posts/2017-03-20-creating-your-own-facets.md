@@ -2,7 +2,7 @@
 layout: post
 title: Creating your own marketing facets based on promotion status
 category: episerver
-tags: [episerver, promotions]
+tags: [promotions]
 ---
 
 With the release of Episerver Commerce 10.4.0 a new feature where added so you can filter campaigns by status, but I wanted to filter the promotions by status. In this blogpost I will show you how to deactivte the default filters and how you can make your own.
