@@ -5,7 +5,7 @@ category: episerver
 tags: [promotions]
 ---
 
-With the release of Episerver Commerce 10.4.0 a new feature where added so you can filter campaigns by status, but I wanted to filter the promotions by status. In this blogpost I will show you how to deactivte the default filters and how you can make your own.
+With the release of Episerver Commerce 10.4.0 a new feature where added so you can filter campaigns by status, but I wanted to filter the promotions by status instead of the campaigns. In this blogpost I will show you how to deactivate the default filters and how you can make your own filters.
 
 The result should look like this: 
 ![promotion status facets]({{ site.baseUrl }}/images/2017-03-20/promotion-status-facets.png)
