@@ -7,7 +7,8 @@ tags: [episerver, promotions]
 
 With the release of Episerver Commerce 10.4.0 a new feature where added so you can filter campaigns by status, but I wanted to filter the promotions by status. In this blogpost I will show you how to deactivte the default filters and how you can make your own.
 
-The result should look like this: ![promotion status facets]({{ site.baseUrl }}/images/2017-03-20/promotion-status-facets.png)
+The result should look like this: 
+![promotion status facets]({{ site.baseUrl }}/images/2017-03-20/promotion-status-facets.png)
 
 The [documentation](http://world.episerver.com/documentation/developer-guides/commerce/marketing/custom-facets-in-the-marketing-overview/) for creating your own facets came last week and I started creating my own facets so they who make promotions at my company could filter promotions by status.
 
@@ -32,7 +33,7 @@ Groups.Add(facetFactory.CreateFacetGroup(
 );
 ```
 
-The GetPromotionStatusFacetItems() is an simple list of FacetItems
+The GetPromotionStatusFacetItems() is a simple list of FacetItems
 
 ```csharp
 private IEnumerable<FacetItem> GetPromotionStatusFacetItems()
@@ -46,8 +47,6 @@ private IEnumerable<FacetItem> GetPromotionStatusFacetItems()
     };
 }
 ```
-
-The last property we send in in the FacetItem is css class so we can get icons next to the facet name. I have used here the ones that episerver provide for the "active, scheduled, expired and inactive" for their campaign  status group.
 
 The last property we send in the FacetItem is css class so we can get icons next to the facet name. I have used here the ones that episerver provide for the "active, scheduled, expired and inactive" for their campaign  status group.
 
@@ -133,7 +132,7 @@ public class CustomFacetStore : RestControllerBase
 }
 ```
 
-If you set the matching number to false, then you can leave out the _filters, and in the Get method just return the CustomFacet.
+If you earlier set the "matching number" property to false, then you can leave out the _filters, and in the Get method just return the CustomFacet.
 
 To get matching numbers working, create a new class that inherits from "GetContentsByFacet" and set the key to the same as the GroupName, in our case it is in the "CustomFacetConstants.PromotionStatus" the complete class looked like this for me
 
