@@ -24,7 +24,7 @@ Groups.Add(facetFactory.CreateFacetGroup(
     new FacetGroupSettings(
         FacetSelectionType.Multiple, // decides if the user can select multiple or just one facet at a time
         0, // how many facets to show before a "more" option comes
-        true, // decides if to show collapse ("more") or not
+        true, // decides if the group is collapsed or not
         true, // if you have icons for the facets, then set this to true
         true, // if true, then a matching number will be set next to the facet  in the cms
         Enumerable.Empty<string>() // if this group is dependent on another group (to get correct matching number)
