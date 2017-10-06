@@ -2,10 +2,11 @@
 layout: post
 title: EPiServer find custom tracking
 category: episerver
-tags: [find]
+description: We use Per Magne Skuseth briliant tool Dynamic multi search and to get statistics to work with that tool, we followed Henrik Fransas guide for how to do custom query and click tracking and all looked to work pretty well, but something was wrong when looking at specific languages.
+tags: [episerver-find]
 ---
 
-We use Per Magne Skuseth briliant tool [Dynamic multi search](https://world.episerver.com/blogs/Per-Magne-Skuseth/Dates/2015/9/dynamic-multi-search-for-episerver-find/) and to get statistics to work with that tool, we followed Henrik Fransas [guide for how to do custom query and click tracking](http://world.episerver.com/blogs/Henrik-Fransas/Dates/2015/2/how-to-do-custom-query-and-click-tracking-with-episerver-find/) and all looked to work pretty well, but something was wrong when looking at a specific language.
+We use Per Magne Skuseth briliant tool [Dynamic multi search](https://world.episerver.com/blogs/Per-Magne-Skuseth/Dates/2015/9/dynamic-multi-search-for-episerver-find/) and to get statistics to work with that tool, we followed Henrik Fransas [guide for how to do custom query and click tracking](http://world.episerver.com/blogs/Henrik-Fransas/Dates/2015/2/how-to-do-custom-query-and-click-tracking-with-episerver-find/) and all looked to work pretty well, but something was wrong when looking at specific languages.
 
 It tracked click and queries correct as you can see in this image
 ![find tracking]({{ site.baseUrl }}/images/2017-10-05/find_all_languages.png) but if you look at the top, then you will see that this is for "all websites" and "all languages". Lets change that to only be for norwegian and this is what we got ![find tracking norwegian]({{ site.baseUrl }}/images/2017-10-05/find_norwegian.png) It didn't track anything for the diffrent languages, so when we wanted to use best best etc then we couldn't set it up currectly
